@@ -91,35 +91,43 @@ h1 {
 }
 @media (max-width: 768px) {
     body {
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(135deg, #c2e9fb, #cfd9df);
     }
 
     .container {
-        width: 100%;
-        border-radius: 0;
-        box-shadow: none;
-        padding: 20px;
+        width: 90%;
+        max-width: 400px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        text-align: center;
     }
 
     h1 {
         font-size: 28px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        color: #333;
     }
 
     .timerDisplay {
         font-size: 36px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .buttons {
+        display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
     .buttons button {
-        padding: 12px 24px;
+        padding: 15px 30px;
         font-size: 16px;
     }
 }
