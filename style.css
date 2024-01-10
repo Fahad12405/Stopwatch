@@ -89,3 +89,37 @@ h1 {
 .buttons button:hover {
     background: linear-gradient(to right, #5563de, #45d994);
 }
+@media (max-width: 768px) {
+    body {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .timerDisplay {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buttons button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
