@@ -1,0 +1,91 @@
+/* Reset default styles */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #c2e9fb, #cfd9df);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    width: 70%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.timerDisplay {
+    background: linear-gradient(to right, #ffcc00, #ff6666);
+    padding: 40px 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-size: 48px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    to {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #738cf5, #5cdb95);
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: linear-gradient(to right, #5563de, #45d994);
+}
